@@ -66,16 +66,20 @@
 }
 
 .content {
+    margin-top: 10px;
     background-color: #b0afaf;
     width: 75%;
     height: auto;
     padding: 5px;
-    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     border: 0px solid black;
     border-radius: 20px;
+}
+
+.content:first-of-type {
+    margin-top: 150px;
 }
 
 section {
@@ -93,30 +97,4 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #cacaca;
     margin: 0;
-}
-
-@keyframes forwards {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(90deg);
-    }
-}
-
-@keyframes backwards {
-    from {
-        transform: rotate(90deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-.forwards {
-    animation: forwards 0.3s ease forwards;
-}
-
-.backwards {
-    animation: backwards 0.3s ease backwards;
 }
